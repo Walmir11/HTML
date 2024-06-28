@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input e seus tipos</title>
+</head>
+<body>
+    <form action="#">
+        <label for="text">text: </label>
+        <input type="text">
+        <br>
+        <label for="number">number: </label>
+        <!--O step fala quanto é o pulo-->
+        <input type="number" min="0" step="5" max="99">
+        <br>
+        <label for="Button">Button: </label>
+        <!--Button e input button funcionam do mesmo jeito-->
+        <input type="button" value="Enviar">
+        <Button>Enviar</Button>
+        <br>
+        <label for="">Range: </label>
+        <input type="range" min="0" max="100" value="10" name="Range" id="range">
+        <br>
+        <label for="">Color: </label>
+        <input type="color">
+        <br>
+        <label for="">E-mail: </label>
+        <input type="email">
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="">URL: </label>
+        <input type="url">
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="">Date: </label>
+        <input type="date">
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="">Week: </label>
+        <input type="week">
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="">Month: </label>
+        <input type="month">
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="">Checkbox: </label>
+        <input type="checkbox"><input type="checkbox">
+        <br>
+        <label for="">Radio: </label>
+        <input type="radio" name="acept"><input type="radio" name="acept">
+        <br>
+        <!--Hidden manda a informação sem aparecer no navegador-->
+        <label for="">Hidden: </label>
+        <input type="hidden">
+        <input type="submit" value="Enviar">
+        <br>
+        <!--O File com o multiplo aceita varios arquivos-->
+        <label for="">File: </label>
+        <input type="file" multiple>
+        <br>
+        <!--É uma busca-->
+        <label for="">Search: </label>
+        <input type="search">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
