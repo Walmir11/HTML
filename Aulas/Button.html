@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags Button</title>
+    </head>
+    <!--O botão só irá funcionar se aplicar o javaScript-->
+    <body>
+        <!--Colocar o onsubmit no forme valida o submit do button-->
+        <form onsubmit="alert('Enviado')" method="get">
+            Nome*: <input type="text" name="nome"><br>
+            Idade*: <input type="number" name="idade"><br>
+            Senha*: <input type="password" name="Senha"><br>
+            <br>
+            <!--O submit funciona com o Enter do teclado-->
+            <button type="button" >Enviar</button>
+            <button type="reset">Limpar</button><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

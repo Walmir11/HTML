@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectbox</title>
+    </head>
+    <body>
+        <form name="Cadastro" onsubmit="alert('Enviei um Formulário')">
+            <label for="name">Nome:</label> <input type="text" name="nome"><br>
+            <label for="Cargo">Cargo:</label> 
+            <select name="Cargo" id="Role" multiple>
+                <option value="">Selecione o Cargo</option>
+                <option value="Administrativo">Administrativo</option>
+                <option selected value="programador">Programador</option>
+                <option value="gerente">Gerente</option>
+                <option value="presidente">Presidente</option>
+            </select>
+            <!--TextArea
+            rowns são as linhas e cols sçao as colunas-->
+            <br>
+            <label for="">Mensagem</label>
+            <textarea rows="10" cols="" name="Mensagem" id="Mensagem"></textarea>
+            <br>
+            <label for="Assunto">Assunto: </label><input type="text" name="Assunto"><br>
+            <button>Enviar</button>
+        </form>
+    </body>
+</html>
