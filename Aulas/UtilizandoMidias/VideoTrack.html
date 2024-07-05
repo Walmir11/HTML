@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags Video/track</title>
+    </head>
+    <body>
+        <video controls>
+            <!--Mesmo vídeo em dois suportes-->
+            <source src="clipe.mp4">
+            <source src="clipe02.webm">
+            <!--O track coloca a legenda no vídeo, pode colocar quantas legendas quiser -->
+            <track src="legenda.vtt" kind="captions" srclang="en">
+            <!--Defaut é colocar como padrão-->
+            <!--Tem acessibilidade a quem tem deficiencia visual-->
+            <track default src="legenda-pt-br.vtt" kind="captions" srclang="pt-br">
+            Seu navegador não suporta vídeo
+        </video>
+    </body>
+</html>
