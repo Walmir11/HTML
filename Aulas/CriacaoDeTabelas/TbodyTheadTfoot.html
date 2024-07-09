@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com tabelas-Tag Table</title>
+        <style>           
+            table tr:nth-child(even){
+                background-color: rgba(255, 0, 0, 0.395)
+            }
+            table tr:hover td{
+                background-color: darkgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" width="250" align="center">  
+            <!--Tbody, Thead, Tfoot servem para organizar em cabeça, corpo e rodape respectivamente da tabela(O navegador reconhece, a ordem não importa)-->          
+            <caption>Descrição da tabela com caption(funciona como título)</caption>
+            <thead>
+                <tr id="Nome/Idade">
+                    <th title="Nome Completo">Nome</th>
+                    <th title="Idade">Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Walmir</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Paulo</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>Tiziiu</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
