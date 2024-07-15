@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags HTML</title>
+        <style>
+            blockquote{
+                background-color: rgba(128, 128, 128, 0.445);
+                padding: 15px;
+                margin-left: 0px;
+                border-left: rgb(152, 0, 0) solid 5px;
+            }
+            article time{
+                font-style: italic;
+            }
+            article q{
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <!--Dá pra mudar a fonte do que está dentro do article -->
+        <main>
+            <!--O article permite alinhamento-->
+            <article>
+                <h1>Qual seu pratofavorito</h1>
+                <!--O de dentro é relacionado com o de fora-->
+                <article>
+                    <p>Churrasco</p>
+                </article>
+            </article>
+
+            <article>
+                <h1>Descoberta de vida em outro planeta</h1>
+                <p>Artigo publicado em <time datetime="2024-07-15T09:19">15/07/2024 09:19</time></p>
+                <!--O q coloca aspas numa citação-->
+                <p>Segundo alunos da Dio <q cite="http://qualquerSite.com">Foi a melhor curso de HTML da internet</q></p>
+                <p>dmahnsbdmhnabsdkjanslkda,ksmd.a,smd.amsdçl,asçl;d</p>
+                <p>mjhagdjhmabsdmjhkdanlkdsjaldma;lsdmçlakdmsçlad.lakjdl.</p>
+                <blockquote cite="http://wikipedia.com">
+                    <!--O cite ajuda a colocar a referencia do assunto com um link-->
+                    <p>Estrela Marta é referente a uma estrela bem mais velha que o nosso Sol</p>
+                </blockquote>
+            </article>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
