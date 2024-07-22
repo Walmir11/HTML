@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recursos especiais</title>
+    </head>
+    <body>
+        <!--meter são valores que não podem carregar, é um medidor-->
+        <meter value="">
+
+        </meter>
+        <!--progress são valores que podem aumentar ou diminuir-->
+        <progress id="progress" max="100" min="0"></progress>
+
+        <script>
+            var progress = document.getElementById('progress')
+            const interval = setInterval(() =>{
+                progress.value += 10;
+                if(progress.value >= 100){
+                    alert('Carregamento realizado com sucesso');
+                    clearInterval(interval);
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>

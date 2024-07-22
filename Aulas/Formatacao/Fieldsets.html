@@ -22,48 +22,54 @@
         </style>
     </head>
     <body>
-        <h1>Formulário de cadastro</h1>
-        <fieldset>
+        <h1 contenteditable="">Formulário de cadastro</h1>
+        <form method="get" action="" id="form"></form>
+        <fieldset >
             <legend>Dados Pessoais</legend>
             <div class="row">
-                <label >Nome: </label><input type="text">
-                <label >E-mail: </label><input type="text">
+                <label >Nome: </label><input form="form" type="text" required>
+                <label >E-mail: </label><input placeholder="EX. meuemail@gmail.com" type="text">
             </div>
 
-            <div class="row">
-                <label >Profissão: </label><input type="text">
-                <label >Empresa: </label><input type="text">
+            <div class="row" >
+                <label >Profissão: </label><input form="form" type="text">
+                <label >Empresa: </label><input form="form" type="text">
             </div>
         </fieldset>
         <fieldset>
             <legend>Endereço</legend>
             <div class="row">
-                <label >Endereço: </label><input type="text">
-                <label >Número: </label><input type="text">
+                <label >Endereço: </label><input form="form" type="text">
+                <label >Número: </label><input form="form" type="text">
             </div>
     
             <div class="row">
-                <label >Bairro: </label><input type="text">
-                <label >Cidade: </label><input type="text">
+                <label >Bairro: </label><input form="form" type="text">
+                <label >Cidade: </label><input form="form" type="text">
+            </div>
+        </fieldset>
+
+        <fieldset disabled>
+            <legend>Indormações de contato</legend>
+            <div class="row">
+                <label >Celular: </label><input form="form" type="text">
+                <label >Whatsapp: </label><input form="form" type="text">
+            </div>
+    
+            <div class="row">
+                <label >Linkedin: </label><input form="form" type="text">
+                <label >Github: </label><input form="form" type="text">
             </div>
         </fieldset>
 
         <fieldset>
-            <legend>Indormações de contato</legend>
-            <div class="row">
-                <label >Celular: </label><input type="text">
-                <label >Whatsapp: </label><input type="text">
-            </div>
-    
-            <div class="row">
-                <label >Linkedin: </label><input type="text">
-                <label >Github: </label><input type="text">
-            </div>
+            <legend>Observação</legend>
+            <textarea form="form" name="Observação" id="Observação" minlength="10" maxlength="500" ></textarea>
         </fieldset>
-        
+
         <div class="row">
-            <button type="reset">Limpar</button>
-            <button type="submit">Enviar formulário</button>
+            <button form="form" type="reset">Limpar</button>
+            <button form="form" type="submit">Enviar formulário</button>
         </div>
 
 
